@@ -23,7 +23,7 @@ class Board extends Component {
       document.title = "Bulletin Board";
 
       if ( this.props.count ) {
-          var url = `http://baconipsum.com/api/?type=all-meat&sentences=${this.props.count}`
+          var url = `//baconipsum.com/api/?type=all-meat&sentences=${this.props.count}`
           fetch(url)
               .then(results => results.json())
               .then(array => array[0])
